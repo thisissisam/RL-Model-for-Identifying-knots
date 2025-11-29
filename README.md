@@ -2,7 +2,7 @@
 Reinforcement Learning Model for simplifying knots through braid operations and identifying them
 
 ## How It Works
-Every knot can be uniquely represented as a braid (an element of the braid group). When the ends of a braid are connected (called the *closure* of the braid), it becomes a knot (or a link). Braid relations and Markov moves act on braids without changing the underlying knot. Using these operations, one can simplify a knot—usually by decreasing the number of crossings. Once the braid has been simplified, the model checks whether it exists in the braid–knot database. If not, it attempts further simplification and repeats the process.
+Every knot can be uniquely represented as a braid (an element of the braid group). When the ends of a braid are connected (called the *closure* of the braid), it becomes a knot (or a link). Braid relations and Markov moves act on braids without changing the underlying knot. Using these operations, one can usually simplify a knot by decreasing the number of crossings. Once the braid has been simplified, the model checks whether it exists in the braid–knot database. If not, it attempts further simplification and repeats the process.
 
 ## How Reinforcement Learning Works
 The main concepts of Reinforcement Learning are **state**, **agent**, **action**, **environment**, **policy**, and **reward function**.
@@ -16,7 +16,7 @@ The main concepts of Reinforcement Learning are **state**, **agent**, **action**
 
 The main challenges of RL are as follows:
 
-- Designing a *reward function* such that the *agent* achieves the intended goal—often referred to as **Reward Engineering**  
+- Designing a *reward function* such that the *agent* achieves the intended goal, which is often referred to as **Reward Engineering**  
 - Determining the best RL model for the specific problem, such as PPO, Q-Learning, DDPG, or multi-policy approaches (combinations of different models and policies)  
 - Setting up the *environment*  
 - Choosing and fine-tuning the hyperparameters of the RL model, such as:  
